@@ -3,6 +3,7 @@
 /* globals currency */
 /* globals OSREC */
 var OSREC = require('currencyformatter.js');
+var common = require('./common.js');
 
 
 
@@ -190,15 +191,21 @@ window.TrelloPowerUp.initialize({
     // to use when creating a card. Trello will also automatically add that url
     // as an attachment to the created card
     // As always you can return a Promise that resolves to the card details
-  
-    
     return new Promise(function (resolve) {
+      var checkUrl = common.getGoogleMapInfo(options.url);
       var descToDisplay = 'Budget[Category]: 100\nYou may change the category within the budget to other term and it will be automatically summarized';
-       resolve({
-        // name: '💻 ' + options.url + ' 🤔',
-        desc: descToDisplay
-      });  
-    });
+      if ("place" in checkUrl) {
+        resolve({
+          name: checkUrl["place"],
+          desc: descToDisplay
+        });
+      } else {
+         resolve({
+          // name: '💻 ' + options.url + ' 🤔',
+          desc: descToDisplay
+        });       
+      }
+    });  
     
     // if we don't actually have any valuable information about the url
     // we can let Trello know like so:
