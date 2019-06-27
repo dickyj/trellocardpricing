@@ -24,3 +24,6 @@ Select "Calculate" on the top right menu and view the total budget
 
 Enjoy 😊
 
+---
+
+![Screenshot](/public/images/screenshot1.png?raw=true "Trello Card Prices and Budget")
