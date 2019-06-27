@@ -1,7 +1,6 @@
 var express = require('express');
 var cors = require('cors');
 var browserify = require('browserify-middleware');
-const axios = require('axios');
 
 
 var app = express();

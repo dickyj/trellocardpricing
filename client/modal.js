@@ -6,7 +6,6 @@ var common = require('./common.js');
 var Tabulator = require('tabulator-tables');
 var ApexCharts = require('apexcharts');
 var OSREC = require('currencyformatter.js');
-const axios = require('axios');
 var moment = require('moment');
 
 var t = TrelloPowerUp.iframe();
