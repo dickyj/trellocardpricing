@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://p.trellocdn.com/power-up.min.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/tabulator-tables@4.2.7/dist/css/tabulator.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
+    <script src="https://p.trellocdn.com/power-up.min.js"></script>
+
+  </head>
+  <body>
+    <div id="content">
+      <section>
+        <div class="displayBudget">
+            Home Currency: <span id="homeCurrencytxt">USD</span>  &nbsp;&nbsp;&nbsp;<button class="displayBudgetBtn" onclick="onBtnCalcClick(this)">Calculate Budget</button>
+        </div>
+      </section>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="container">
+              <h4><b>Lists</b></h4> 
+              <span id="listCount">-</span> 
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="container">
+              <h4><b>Cards</b></h4> 
+              <span id="cardCount">-</span> 
+            </div>            
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="container">
+              <h4><b>Costs</b></h4> 
+              <span id="costCount">-</span> 
+            </div>          
+          </div>
+        </div>
+      </div>
+      <div class="status">
+      </div>
+      <p class="u-modal"></p>   
+      <div id="chart">
+
+      </div>
+      <div id="budget-table"></div>
+    </div>
+    <script src="/js/modalstatic.js"></script>
+  </body>
+</html>

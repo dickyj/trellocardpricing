@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://p.trellocdn.com/power-up.min.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link href="https://unpkg.com/tabulator-tables@4.2.7/dist/css/tabulator.min.css" rel="stylesheet">
+    <script src="https://p.trellocdn.com/power-up.min.js"></script>
+
+  </head>
+  <body>
+    <div id="content">
+      <h2>Tips for using t.modal()</h2>
+      <hr/>
+      <section>
+        <div class="dev-only">
+            <button onclick="window.settingsInstance.showData()">Show data</button>
+            <button class="mod-danger" onclick="window.settingsInstance.wipeData()">Wipe data</button>
+        </div>
+      </section>
+      <ol>
+        <li>You should only call t.modal() as a response to a user action, such as clicking a button.</li>
+        <li>Try to use t.popup() when possible instead of t.modal() as it helps to better maintain context.</li>
+        <li>Try to get your modal to load and render as quickly as possible.</li>
+      </ol>
+      <p class="u-modal">Total cards: <span id="chartloc"></span></p>   
+      <div id="chart">
+
+      </div>
+      <div id="budget-table"></div>
+    </div>
+    <script async src="/js/modal.js"></script>
+  </body>
+</html>
