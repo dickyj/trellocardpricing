@@ -26,4 +26,4 @@ Enjoy 😊
 
 ---
 
-![Screenshot](/public/images/screenshot1.png?raw=true "Trello Card Prices and Budget")
+![Screenshot](/public/images/Screenshot1.png?raw=true "Trello Card Prices and Budget")
