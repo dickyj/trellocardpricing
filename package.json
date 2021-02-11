@@ -12,7 +12,7 @@
     "cors": "^2.8.5",
     "currencyformatter.js": "^2.2.0",
     "currency-codes": "^1.5.0",
-    "apexcharts": "^3.6.11",
+    "apexcharts": "^3.24.0",
     "tabulator-tables": "^4.2.7",
     "ejs": "^2.6.1",
     "moment": "^2.24.0"
