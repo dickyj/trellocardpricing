@@ -15,7 +15,7 @@
     "apexcharts": "^3.6.11",
     "tabulator-tables": "^4.2.7",
     "ejs": "^2.6.1",
-    "moment": "^2.24.0"
+    "moment": "^2.29.4"
   },
   "engines": {
     "node": "8.15.1"
